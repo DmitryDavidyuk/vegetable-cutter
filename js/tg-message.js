@@ -6,9 +6,8 @@ const success = document.getElementById("success");
 
 document.getElementById("tg-form").addEventListener("submit", function (e) {
   e.preventDefault();
-  let id = 1;
 
-  let message = `<b>Заявка з сайта ${id}</b>\n`;
+  let message = `<b>Заявка з сайта}</b>\n`;
   message += `<b>Ім'я: </b> ${this.name.value}\n`;
   message += `<b>Телефон: </b> ${this.phone.value}\n`;
   message += `<b>Кількість товарів: </b>${this.field.value}\n`;
