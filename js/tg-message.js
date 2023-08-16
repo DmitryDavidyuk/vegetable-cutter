@@ -6,7 +6,7 @@ const success = document.getElementById("success");
 
 document.getElementById("tg-form").addEventListener("submit", function (e) {
   e.preventDefault();
-  let id = 0;
+  let id = 1;
 
   let message = `<b>Заявка з сайта ${id}</b>\n`;
   message += `<b>Ім'я: </b> ${this.name.value}\n`;
@@ -23,6 +23,7 @@ document.getElementById("tg-form").addEventListener("submit", function (e) {
       this.name.value = "";
       this.phone.value = "";
       success.style.display = "block";
+      id += 1;
     })
     .catch((err) => console.warn(err));
 });
