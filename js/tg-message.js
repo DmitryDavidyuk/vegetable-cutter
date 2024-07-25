@@ -10,8 +10,11 @@ document.getElementById("tg-form").addEventListener("submit", function (e) {
   let message = `<b>Заявка з сайта}</b>\n`;
   message += `<b>Ім'я: </b> ${this.name.value}\n`;
   message += `<b>Телефон: </b> ${this.phone.value}\n`;
-  message += `<b>Кількість товарів: </b>${this.field.value}\n`;
-
+  message += `<b>Спосіб доставки: </b>${this.field.value}\n`;
+  message += `<b>Місто: </b>${this.city.value}\n`;
+  message += `<b>Номер НП: </b>${this.werhouse.value}\n`;
+  
+  
   axios
     .post(URL, {
       chat_id: CHAT_ID,
